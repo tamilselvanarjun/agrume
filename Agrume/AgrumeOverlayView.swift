@@ -52,6 +52,11 @@ final class AgrumeCloseButtonOverlayView: AgrumeOverlayView {
       navigationItem.leftBarButtonItem = defaultCloseButton
     }
     
+    navigationItem.rightBarButtonItem = UIBarButtonItem(
+      title: NSLocalizedString("Share", comment: "Close image view"),
+      style: .plain, target: self, action: #selector(close)
+    )
+    
     NSLayoutConstraint.activate([
       navigationBar.topAnchor.constraint(equalTo: portableSafeTopInset),
       navigationBar.widthAnchor.constraint(equalTo: widthAnchor),
