@@ -684,5 +684,11 @@ extension Agrume: AgrumeCloseButtonOverlayViewDelegate {
   func agrumeOverlayViewWantsToClose(_ view: AgrumeCloseButtonOverlayView) {
     dismiss()
   }
+  
+  func xyz(_ a: UIActivityViewController) {
+    
+    self.present(a, animated: true, completion: nil)
+
+  }
 
 }
